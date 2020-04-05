@@ -1,0 +1,13 @@
+@mixin font--h3-p-sizes($h3-size,$psize){
+  h3 {
+    font-size: $h3-size;
+    & + p {
+      font-size: $psize;
+    }
+  }
+}
+
+@mixin effect--ease-in($duration) {
+  transition: $duration;
+  transition-timing-function: ease;
+}

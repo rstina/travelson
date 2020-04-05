@@ -1,0 +1,48 @@
+header {
+  background: $color--dark-background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.2rem 0;
+  li + li {
+    margin-left: 1rem;
+  }
+  ul {
+    margin-top: 1.2rem;
+    li a {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.header__link {
+  font-family: $font--logo;
+  font-size: 1.6rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: $color--first-heading;
+  padding: 0.25rem 3.75rem;
+}
+
+.header__nav ul li {
+  list-style: none;
+  display: inline;
+}
+
+@media only screen and (min-width: 745px) {
+  header {
+    flex-direction: row;
+    padding: 1.25rem 4.5rem;
+    @include effect--ease-in(1s);
+    li + li {
+      margin-left: 2rem;
+    }
+    ul {
+      margin-top: 0;
+      li a {
+        font-size: 1rem;
+      }
+    }
+  }
+}

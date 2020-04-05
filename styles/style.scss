@@ -1,0 +1,18 @@
+@import 
+"variables",
+"extends", 
+"mixins",
+"typography",
+"site-parts/header", 
+"site-parts/article-section",
+"site-parts/thumbnail-section",
+"site-parts/small-collage-section",
+"site-parts/single-image-section",
+"site-parts/collage-section", 
+"site-parts/hero-container",
+"site-parts/footer";
+
+body {
+  margin: 0;
+  width: 100%;
+}

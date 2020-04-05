@@ -1,0 +1,74 @@
+body {
+  font-family: $font--heading-family;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+h2 {
+  @extend %margin-padding-zero;
+  font-size: 1.9rem;
+  margin-top: 0.6rem;
+  @media only screen and (min-width: 685px) {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 2.9rem;
+  & + p {
+    @extend %margin-padding-zero;
+    font-size: 0.8rem;
+  }
+  & + aside {
+    margin: 2rem 0 2rem 0;
+  }
+  @media only screen and (min-width: 745px) {
+    font-size: 2.5rem;
+    margin-top: 0;
+    & + p {
+      font-size: 1rem;
+    }
+  }
+}
+
+h4 {
+  font-size: 1.2rem;
+  & + p {
+    padding: 0;
+  }
+  @media only screen and (min-width: 685px) {
+    font-size: 1.7rem;
+    margin-top: 0;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+  @media only screen and (min-width: 685px) {
+    font-size: 0.9rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #eaddd9;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+ul,
+li {
+  @extend %margin-padding-zero;
+}
